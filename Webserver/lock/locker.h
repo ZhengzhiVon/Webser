@@ -1,3 +1,6 @@
+#ifndef LOCKER_H
+#define LOCKER_H
+
 #include <exception>
 #include <pthread.h>
 #include <semaphore.h>
@@ -124,3 +127,5 @@ public:
 private:
     pthread_cond_t m_cond; // 条件变量变量
 };
+
+#endif
